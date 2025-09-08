@@ -125,6 +125,6 @@ fig = px.timeline(
     title="Gráfico de Gantt - Caminho Crítico"
 )
 fig.update_yaxes(categoryorder="total ascending")
-fig.show()
+
 pio.renderers.default = "browser"
 fig.show()
