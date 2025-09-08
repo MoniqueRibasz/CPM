@@ -19,7 +19,6 @@ def find_all_paths(graph, start, end, path=[]):
                 paths.append(newpath)
     return paths
 
-Df = pd.read_csv("table.csv") # ARQUIVO BASE DE DADOS
 Df = pd.read_csv("https://raw.githubusercontent.com/MoniqueRibasz/CPM/main/table.csv") # ARQUIVO BASE DE DADOS
 graph_edges={x:[] for x in Df["Activity"]}
 weights ={k:int(v) for k,v in zip(Df["Activity"],Df["Duration"])} #Duration
