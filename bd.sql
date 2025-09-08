@@ -46,6 +46,7 @@ CREATE TABLE cronograma (
     cod_area_cronograma INT,                    # Configurar FK
     cod_subarea_cronograma INT,                 # Configurar FK
     cod_disciplina_cronograma INT,              # Configurar FK
+    status_atividade VARCHAR (20),              # Trigger % concluído (= 0% não iniciada, >= 1% iniciada, = 100% concluída)
     data_inicio DATETIME,
     data_fim DATETIME,
     comentário VARCHAR (300),
