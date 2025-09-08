@@ -53,3 +53,17 @@ CREATE TABLE cronograma (
     percentual_concluído DECIMAL,
     responsável_apontamento INT                 # Configurar FK
 )
+
+CREATE TABLE urgencia_emergencia (
+    id INT IDENTITY (1, 1) PRIMARY KEY,
+    id_parada INT,                              # Configurar FK
+    numero_os VARCHAR (20),
+    descrição_os VARCHAR (100),
+    cod_subcronograma_cronograma INT,           # Configurar FK
+    cod_area_cronograma INT,                    # Configurar FK
+    cod_subarea_cronograma INT,                 # Configurar FK
+    cod_disciplina_cronograma INT,              # Configurar FK
+    data_inicio DATETIME,
+    data_fim DATETIME,
+    comentário VARCHAR (300),
+)
