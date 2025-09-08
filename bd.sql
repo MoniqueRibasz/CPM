@@ -47,6 +47,7 @@ CREATE TABLE cronograma (
     cod_disciplina_cronograma INT,              # Configurar FK
     data_inicio DATETIME,
     data_fim DATETIME,
+    comentário VARCHAR (300),
     duracao_original DECIMAL,
     duracao_atualizada DECIMAL,
     percentual_concluído DECIMAL,
