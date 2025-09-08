@@ -1,2 +1,2 @@
 # CPM
-Critical Path Method with GANTT Chart.
+Critical Path Method with GANTT Chart and Curve 'S'.
