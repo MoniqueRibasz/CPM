@@ -3,6 +3,7 @@ import numpy as np
 import pandas as pd
 import pylab as plt
 import plotly.express as px
+import plotly.io as pio
 
 def find_all_paths(graph, start, end, path=[]):
     path = path + [start]
@@ -18,7 +19,7 @@ def find_all_paths(graph, start, end, path=[]):
                 paths.append(newpath)
     return paths
 
-Df = pd.read_csv("table.csv") # ARQUIVO BASE DE DADOS
+Df = pd.read_csv("https://raw.githubusercontent.com/MoniqueRibasz/CPM/refs/heads/main/table.csv") # ARQUIVO BASE DE DADOS
 graph_edges={x:[] for x in Df["Activity"]}
 weights ={k:int(v) for k,v in zip(Df["Activity"],Df["Duration"])} #Duration
 
@@ -144,4 +145,5 @@ fig = px.timeline(
     title="Gráfico de Gantt - Caminho Crítico"
 )
 fig.update_yaxes(categoryorder="total ascending")
+pio.renderers.default = "browser"
 fig.show()
