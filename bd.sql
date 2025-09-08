@@ -29,6 +29,7 @@ CREATE TABLE usuarios (
     id INT IDENTITY (1, 1) PRIMARY KEY,
     nome_usuario VARCHAR (80),
     senha_usuario VARCHAR (20),
+    acesso VARCHAR (20),
     cod_disciplina_usuarios INT,                # Configurar FK
     cod_area_usuarios INT                       # Configurar FK
 );
