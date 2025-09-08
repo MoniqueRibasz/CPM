@@ -1,10 +1,10 @@
 Activity,Predecessors,Duration
 St,,0
 A,St,6
-B,St,5
-C,A,6
-D,B,7
-E,B,8
+B,St,4
+C,A,3
+D,B,4
+E,B,3
 F,St,10
 G,E F,3
 H,C D,2
